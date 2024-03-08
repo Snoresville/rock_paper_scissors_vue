@@ -49,24 +49,24 @@ const { backgroundName } = defineProps<{
 }
 
 .background_rps {
-    background: url("img/rps.png");
+    background: url("../../public/img/rps.png");
     background-size: var(--background-image-size) var(--background-image-size);
 }
 
 .background_rock {
-    background: url("img/rock.png");
+    background: url("../../public/img/rock.png");
     background-size: var(--background-image-size) var(--background-image-size);
     background-color: rgb(177, 33, 33);
 }
 
 .background_paper {
-    background: url("img/paper.png");
+    background: url("../../public/img/paper.png");
     background-size: var(--background-image-size) var(--background-image-size);
     background-color: rgb(52, 72, 250);
 }
 
 .background_scissors {
-    background: url("img/scissors.png");
+    background: url("../../public/img/scissors.png");
     background-size: var(--background-image-size) var(--background-image-size);
     background-color: rgb(51, 165, 66);
 }
