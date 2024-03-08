@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { Moves } from '../types';
-
+import { Moves } from "../types";
 
 const { backgroundName } = defineProps<{
-    backgroundName: Moves
-}>()
-
+    backgroundName: Moves;
+}>();
 </script>
 
 <template>
     <Teleport to="body">
-        <div :class="{
-            background: true,
-            background_rps: backgroundName == Moves.None,
-            background_rock: backgroundName == Moves.Rock,
-            background_paper: backgroundName == Moves.Paper,
-            background_scissors: backgroundName == Moves.Scissors,
-        }" />
+        <div
+            :class="{
+                background: true,
+                background_rps: backgroundName == Moves.None,
+                background_rock: backgroundName == Moves.Rock,
+                background_paper: backgroundName == Moves.Paper,
+                background_scissors: backgroundName == Moves.Scissors,
+            }"
+        />
     </Teleport>
 </template>
 
@@ -41,29 +41,32 @@ const { backgroundName } = defineProps<{
     }
 
     100% {
-        transform: translate(calc(var(--background-image-size) * -1), calc(var(--background-image-size) * -1));
+        transform: translate(
+            calc(var(--background-image-size) * -1),
+            calc(var(--background-image-size) * -1)
+        );
     }
 }
 
 .background_rps {
-    background: url('../assets/rps.png');
+    background: url("img/rps.png");
     background-size: var(--background-image-size) var(--background-image-size);
 }
 
 .background_rock {
-    background: url('../assets/rock.png');
+    background: url("img/rock.png");
     background-size: var(--background-image-size) var(--background-image-size);
     background-color: rgb(177, 33, 33);
 }
 
 .background_paper {
-    background: url('../assets/paper.png');
+    background: url("img/paper.png");
     background-size: var(--background-image-size) var(--background-image-size);
     background-color: rgb(52, 72, 250);
 }
 
 .background_scissors {
-    background: url('../assets/scissors.png');
+    background: url("img/scissors.png");
     background-size: var(--background-image-size) var(--background-image-size);
     background-color: rgb(51, 165, 66);
 }

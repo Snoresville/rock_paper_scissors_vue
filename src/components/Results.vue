@@ -18,11 +18,11 @@ const emit = defineEmits<{
 const moveSymbol = (move: Moves) => {
     switch (move) {
         case Moves.Rock:
-            return "./src/assets/rock.png";
+            return "img/rock.png";
         case Moves.Paper:
-            return "./src/assets/paper.png";
+            return "img/paper.png";
         case Moves.Scissors:
-            return "./src/assets/scissors.png";
+            return "img/scissors.png";
         default:
             return "";
     }
