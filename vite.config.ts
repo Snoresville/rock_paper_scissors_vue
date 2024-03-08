@@ -5,5 +5,4 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
     plugins: [vue()],
     base: "/rock_paper_scissors_vue/",
-    publicDir: "rock_paper_scissors_vue",
 });
